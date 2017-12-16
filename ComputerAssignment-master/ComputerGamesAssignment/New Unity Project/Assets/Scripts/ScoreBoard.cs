@@ -12,6 +12,7 @@ public class ScoreBoard : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		DontDestroyOnLoad (gameObject);
 		instance = this;
 		LeftScoreNum = RightScoreNum = 0;
 	}
