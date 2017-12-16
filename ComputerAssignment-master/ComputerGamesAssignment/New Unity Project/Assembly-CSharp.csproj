@@ -51,7 +51,7 @@
      <Compile Include="Assets\Scripts\MousePaddle.cs" />
      <Compile Include="Assets\Scripts\ScoreBoard.cs" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Users/Matt/Desktop/ComputerAssignment-master/ComputerGamesAssignment/New Unity Project/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>C:/Users/Matt/Documents/GitHub/ComputerAssignment/ComputerAssignment-master/ComputerGamesAssignment/New Unity Project/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Programs/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
