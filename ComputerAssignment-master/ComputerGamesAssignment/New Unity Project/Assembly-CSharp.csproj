@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\KeyBoardPaddle.cs" />
      <Compile Include="Assets\Scripts\LvlLoader.cs" />
      <Compile Include="Assets\Scripts\MousePaddle.cs" />
+     <Compile Include="Assets\Scripts\MovingObs.cs" />
      <Compile Include="Assets\Scripts\ScoreBoard.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>C:/Users/Matt/Documents/GitHub/ComputerAssignment/ComputerAssignment-master/ComputerGamesAssignment/New Unity Project/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
