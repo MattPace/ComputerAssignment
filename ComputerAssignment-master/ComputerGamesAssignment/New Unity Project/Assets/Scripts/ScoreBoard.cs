@@ -45,7 +45,7 @@ public class ScoreBoard : MonoBehaviour {
 		} else if (currentlvl == "LevelIII" && LeftScoreNum == 3) {
 			PlayerPrefs.SetInt("leftScore", LeftScoreNum);
 			PlayerPrefs.SetInt("rightScore", RightScoreNum);
-			Application.LoadLevel ("EndMenu");
+			Application.LoadLevel ("LeftWin");
 		}
 	}
 
@@ -64,7 +64,7 @@ public class ScoreBoard : MonoBehaviour {
 		} else if (currentlvl == "LevelIII" && RightScoreNum == 3) {
 			PlayerPrefs.SetInt("leftScore", LeftScoreNum);
 			PlayerPrefs.SetInt("rightScore", RightScoreNum);
-			Application.LoadLevel ("EndMenu");
+			Application.LoadLevel ("RightWin");
 		}
 	}
 }
