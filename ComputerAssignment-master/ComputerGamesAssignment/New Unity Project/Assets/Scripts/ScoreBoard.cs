@@ -12,9 +12,11 @@ public class ScoreBoard : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		DontDestroyOnLoad (gameObject);
 		instance = this;
-		LeftScoreNum = RightScoreNum = 0;
+		string currentlvl = Application.loadedLevelName;
+		if(currentlvl == "LevelI"){
+			LeftScoreNum = RightScoreNum = 0;
+		}
 	}
 	
 	// Update is called once per frame
@@ -22,12 +24,28 @@ public class ScoreBoard : MonoBehaviour {
 		
 	}
 
+	void OnEnable()
+	{
+		LeftScoreNum  =  PlayerPrefs.GetInt("leftScore");
+		RightScoreNum  =  PlayerPrefs.GetInt("rightScore");
+	}
+
 	public void LeftPoint(){
 		string currentlvl = Application.loadedLevelName;
 		LeftScoreNum += 1; 
-		LeftScore.text = LeftScoreNum.ToString();
-		if (LeftScoreNum == 1) {
-			Application.LoadLevel (currentlvl+"I");
+		LeftScore.text = LeftScoreNum.ToString ();
+		if (currentlvl == "LevelI" && LeftScoreNum == 1) {
+			PlayerPrefs.SetInt ("leftScore", LeftScoreNum);
+			PlayerPrefs.SetInt ("rightScore", RightScoreNum);
+			Application.LoadLevel ("LevelII");
+		} else if (currentlvl == "LevelII" && LeftScoreNum == 2) {
+			PlayerPrefs.SetInt("leftScore", LeftScoreNum);
+			PlayerPrefs.SetInt("rightScore", RightScoreNum);
+			Application.LoadLevel ("LevelIII");
+		} else if (currentlvl == "LevelIII" && LeftScoreNum == 3) {
+			PlayerPrefs.SetInt("leftScore", LeftScoreNum);
+			PlayerPrefs.SetInt("rightScore", RightScoreNum);
+			Application.LoadLevel ("EndMenu");
 		}
 	}
 
@@ -35,8 +53,18 @@ public class ScoreBoard : MonoBehaviour {
 		string currentlvl = Application.loadedLevelName;
 		RightScoreNum += 1; 
 		RightScore.text = RightScoreNum.ToString();
-		if (RightScoreNum == 1) {
-			Application.LoadLevel (currentlvl+"I");
+		if (currentlvl == "LevelI" && RightScoreNum == 1) {
+			PlayerPrefs.SetInt ("leftScore", LeftScoreNum);
+			PlayerPrefs.SetInt ("rightScore", RightScoreNum);
+			Application.LoadLevel ("LevelII");
+		} else if (currentlvl == "LevelII" && RightScoreNum == 2) {
+			PlayerPrefs.SetInt("leftScore", LeftScoreNum);
+			PlayerPrefs.SetInt("rightScore", RightScoreNum);
+			Application.LoadLevel ("LevelIII");
+		} else if (currentlvl == "LevelIII" && RightScoreNum == 3) {
+			PlayerPrefs.SetInt("leftScore", LeftScoreNum);
+			PlayerPrefs.SetInt("rightScore", RightScoreNum);
+			Application.LoadLevel ("EndMenu");
 		}
 	}
 }
