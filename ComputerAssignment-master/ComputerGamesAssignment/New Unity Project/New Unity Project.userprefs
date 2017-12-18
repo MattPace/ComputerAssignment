@@ -1,9 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MovingObs.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ScoreBoard.cs">
     <Files>
-      <File FileName="Assets\Scripts\ScoreBoard.cs" Line="48" Column="38" />
-      <File FileName="Assets\Scripts\MovingObs.cs" Line="33" Column="74" />
+      <File FileName="Assets\Scripts\ScoreBoard.cs" Line="68" Column="4" />
+      <File FileName="Assets\Scripts\MovingObs.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

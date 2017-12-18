@@ -34,15 +34,15 @@ public class ScoreBoard : MonoBehaviour {
 		string currentlvl = Application.loadedLevelName;
 		LeftScoreNum += 1; 
 		LeftScore.text = LeftScoreNum.ToString ();
-		if (currentlvl == "LevelI" && LeftScoreNum == 1) {
+		if (currentlvl == "LevelI" && LeftScoreNum == 5) {
 			PlayerPrefs.SetInt ("leftScore", LeftScoreNum);
 			PlayerPrefs.SetInt ("rightScore", RightScoreNum);
 			Application.LoadLevel ("LevelII");
-		} else if (currentlvl == "LevelII" && LeftScoreNum == 2) {
+		} else if (currentlvl == "LevelII" && LeftScoreNum == 10) {
 			PlayerPrefs.SetInt("leftScore", LeftScoreNum);
 			PlayerPrefs.SetInt("rightScore", RightScoreNum);
 			Application.LoadLevel ("LevelIII");
-		} else if (currentlvl == "LevelIII" && LeftScoreNum == 3) {
+		} else if (currentlvl == "LevelIII" && LeftScoreNum == 15) {
 			PlayerPrefs.SetInt("leftScore", LeftScoreNum);
 			PlayerPrefs.SetInt("rightScore", RightScoreNum);
 			Application.LoadLevel ("LeftWin");
@@ -53,15 +53,15 @@ public class ScoreBoard : MonoBehaviour {
 		string currentlvl = Application.loadedLevelName;
 		RightScoreNum += 1; 
 		RightScore.text = RightScoreNum.ToString();
-		if (currentlvl == "LevelI" && RightScoreNum == 1) {
+		if (currentlvl == "LevelI" && RightScoreNum == 5) {
 			PlayerPrefs.SetInt ("leftScore", LeftScoreNum);
 			PlayerPrefs.SetInt ("rightScore", RightScoreNum);
 			Application.LoadLevel ("LevelII");
-		} else if (currentlvl == "LevelII" && RightScoreNum == 2) {
+		} else if (currentlvl == "LevelII" && RightScoreNum == 10) {
 			PlayerPrefs.SetInt("leftScore", LeftScoreNum);
 			PlayerPrefs.SetInt("rightScore", RightScoreNum);
 			Application.LoadLevel ("LevelIII");
-		} else if (currentlvl == "LevelIII" && RightScoreNum == 3) {
+		} else if (currentlvl == "LevelIII" && RightScoreNum == 15) {
 			PlayerPrefs.SetInt("leftScore", LeftScoreNum);
 			PlayerPrefs.SetInt("rightScore", RightScoreNum);
 			Application.LoadLevel ("RightWin");
